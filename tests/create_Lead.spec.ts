@@ -9,9 +9,6 @@ await page.goto("https://leaftaps.com/opentaps/control/login");
 // Locate the Username textbox using its accessible name and enter the username
 await page.getByRole("textbox",{name:"Username"}).fill("Demosalesmanager");
 
-// Locate the Password textbox using its accessible name and enter the password
-//await page.getByRole("textbox",{name:"Password"}).fill("crmsfa");
-
 // Locate the Password field using its associated label and enter the password
 await page.getByLabel("Password").fill("crmsfa");
 
@@ -23,9 +20,6 @@ await page.getByText("CRM/SFA").click();
 
 // Locate the Leads text exactly and click it
 await page.getByText("Leads",{exact:true}).click();
-
-// Locate the Create Lead text exactly and click it
-//await page.getByText("Create Lead",{exact:true}).click();
 
 // Locate the Create Lead link using its role and click it
 await page.getByRole("link",{name:"Create Lead"}).click();
